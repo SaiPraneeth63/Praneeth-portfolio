@@ -1,0 +1,183 @@
+
+/* Basic settings for the whole webpage */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #183153;
+    background: #f3f7fc;
+}
+
+/* Center the content and limit its maximum width */
+.container {
+    width: min(100% - 32px, 900px);
+    margin: 0 auto;
+}
+
+/* Header section with a blue gradient background */
+.hero {
+    padding: 76px 0 72px;
+    color: white;
+    text-align: center;
+    background: linear-gradient(135deg, #123c82, #2678d8);
+}
+
+/* Small heading above your name */
+.eyebrow {
+    margin: 0 0 12px;
+    color: #cfe4ff;
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 0.16em;
+}
+
+/* Main heading containing your name */
+h1 {
+    margin: 0;
+    font-size: clamp(2rem, 6vw, 3.2rem);
+    line-height: 1.15;
+}
+
+/* Subtitle below your name */
+.subtitle {
+    margin: 16px 0 28px;
+    color: #e5f0ff;
+    font-size: 1.15rem;
+}
+
+/* Style the Get in Touch link like a button */
+.button {
+    display: inline-block;
+    padding: 11px 20px;
+    border-radius: 999px;
+    color: #174b91;
+    background: white;
+    font-weight: bold;
+    text-decoration: none;
+    transition: transform 0.2s ease,
+                background 0.2s ease;
+}
+
+/* Change the button when the mouse hovers over it */
+.button:hover {
+    transform: translateY(-2px);
+    background: #eaf3ff;
+}
+
+/* Add spacing around the main content */
+main {
+    padding-top: 28px;
+    padding-bottom: 28px;
+}
+
+/* Give each section a white card design */
+.card {
+    margin-bottom: 20px;
+    padding: 28px;
+    border: 1px solid #e0eaf6;
+    border-radius: 16px;
+    background: white;
+    box-shadow: 0 8px 24px rgba(25, 65, 115, 0.06);
+}
+
+/* Section headings */
+h2 {
+    margin: 0 0 14px;
+    color: #1755a5;
+    font-size: 1.45rem;
+}
+
+/* Remove extra space above section paragraphs */
+.card p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* Arrange skill labels in flexible rows */
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Style each individual skill label */
+.skills-list li {
+    padding: 8px 14px;
+    border: 1px solid #c9def8;
+    border-radius: 999px;
+    color: #174b91;
+    background: #edf5ff;
+    font-weight: bold;
+}
+
+/* Highlight the project description */
+.project {
+    padding: 18px;
+    border-left: 4px solid #2878d0;
+    border-radius: 8px;
+    background: #f5f9ff;
+}
+
+/* Project title */
+.project h3 {
+    margin: 0 0 8px;
+    color: #183153;
+}
+
+/* Style the email address */
+.email-link {
+    display: inline-block;
+    margin-top: 8px;
+    color: #1765bd;
+    overflow-wrap: anywhere;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Underline the email when the mouse hovers over it */
+.email-link:hover {
+    text-decoration: underline;
+}
+
+/* Footer section at the bottom */
+footer {
+    padding: 22px 0;
+    color: #dceaff;
+    text-align: center;
+    background: #102d56;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Adjust the design for mobile phones */
+@media (max-width: 600px) {
+    .hero {
+        padding: 56px 0 52px;
+    }
+
+    .card {
+        padding: 22px 18px;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+}
